@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: php_service
+    depends_on:
+      - nginx
+  nginx:
+
+  postgres:
