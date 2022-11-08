@@ -3,4 +3,4 @@ up:
 down:
 	docker compose down
 create-project:
-	docker run composer create-project --prefer-dist laravel/laravel .
+	docker run composer create-project laravel/laravel .
